@@ -1,0 +1,15 @@
+import java.sql.*;
+
+class MyDB {
+	Connection conn;
+	Statement stmt;
+	ResultSet rs;
+	
+	
+	// 데이터베이스에 연결
+	public void connectDB() {
+		//1.드라이버 적재
+		
+		//2.DB연결
+	}
+}
