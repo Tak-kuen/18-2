@@ -1,0 +1,9 @@
+
+9월 06, 2018 09:20:05.53 NEW SESSION
+9월 06, 2018 09:20:05.53 Unable to read VR Path Registry from C:\Users\bon320-14\AppData\Local\openvr\openvrpaths.vrpath
+9월 06, 2018 09:27:53.22 [928:6604:0906/092753.229:ERROR:audio_manager_base.cc(361)] Invalid audio output parameters received; using fake audio path: format: 0 channel_layout: 0 channels: 0 sample_rate: 0 frames_per_buffer: 0 effects: 0 mic_positions: 
+9월 06, 2018 09:28:08.38 [928:6604:0906/092808.386:ERROR:audio_manager_base.cc(361)] Invalid audio output parameters received; using fake audio path: format: 0 channel_layout: 0 channels: 0 sample_rate: 0 frames_per_buffer: 0 effects: 0 mic_positions: 
+9월 06, 2018 09:37:55.96 [928:6604:0906/093755.964:ERROR:audio_manager_base.cc(361)] Invalid audio output parameters received; using fake audio path: format: 0 channel_layout: 0 channels: 0 sample_rate: 0 frames_per_buffer: 0 effects: 0 mic_positions: 
+9월 06, 2018 11:12:41.92 [928:6604:0906/111241.928:ERROR:audio_manager_base.cc(361)] Invalid audio output parameters received; using fake audio path: format: 0 channel_layout: 0 channels: 0 sample_rate: 0 frames_per_buffer: 0 effects: 0 mic_positions: 
+9월 06, 2018 11:12:41.98 [928:6604:0906/111241.989:ERROR:audio_manager_base.cc(361)] Invalid audio output parameters received; using fake audio path: format: 0 channel_layout: 0 channels: 0 sample_rate: 0 frames_per_buffer: 0 effects: 0 mic_positions: 
+9월 06, 2018 11:12:42.22 [928:6604:0906/111242.220:ERROR:audio_manager_base.cc(361)] Invalid audio output parameters received; using fake audio path: format: 0 channel_layout: 0 channels: 0 sample_rate: 0 frames_per_buffer: 0 effects: 0 mic_positions: 

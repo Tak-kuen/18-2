@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>infoTest</title>
+</head>
+<body>
+<%
+
+int age = Integer.parseInt(request.getParameter("age"));
+String result;
+
+if(age>=20) result="성인";
+else result="미성년";
+
+RequestDispatcher dispatcher = request.getRequestDispatcher("146-2_result.jsp");
+dispatcher.forward(request,response);
+%>
+
+</body>
+</html>
