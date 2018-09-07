@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>1501163</title>
+</head>
+<body>
+<h3>보조무기를 선택해주세요</h3>
+<form action="equipmentSelect" method="post">
+<% 
+String category = (String)session.getAttribute("category");
+if(category.equals("ar")){
+	String mainWeapon = request.getParameter("ar");
+	session.setAttribute(mainWeapon);
+}
+if(category.equals("sr")){
+	String mainWeapon = request.getParameter("sr");
+	session.setAttribute(mainWeapon,"mainWeapon");
+}
+session.setAttribute(category, "category");
+%>
+
+
+</form>
+
+</body>
+</html>
