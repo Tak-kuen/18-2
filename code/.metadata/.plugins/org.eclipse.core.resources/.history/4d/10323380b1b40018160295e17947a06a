@@ -1,0 +1,7 @@
+import java.util.*;
+
+public class WDB {
+	Test test=new Test();
+	//test.divideByZero();
+	test.ArrayIndexOutOf();
+}

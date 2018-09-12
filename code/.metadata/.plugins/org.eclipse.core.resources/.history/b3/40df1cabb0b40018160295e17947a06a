@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Test {
+	int x,y;
+		
+	Scanner input = new Scanner(System.in);
+	System.out.print("나누어지는 수 : " );
+	x = input.nextInt();
+		
+	System.out.print("나누는 수 : ");
+	y = input.nextInt();
+	try {
+	int result=x/y;
+	} catch(Exception e) {
+		System.out.println("예외를 처리");
+	} finally {
+		System.out.println("ㄹㄹ");
+	}
+	System.out.println("정상 실행");
+}

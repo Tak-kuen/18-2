@@ -7,3 +7,29 @@
 9월 06, 2018 11:12:41.92 [928:6604:0906/111241.928:ERROR:audio_manager_base.cc(361)] Invalid audio output parameters received; using fake audio path: format: 0 channel_layout: 0 channels: 0 sample_rate: 0 frames_per_buffer: 0 effects: 0 mic_positions: 
 9월 06, 2018 11:12:41.98 [928:6604:0906/111241.989:ERROR:audio_manager_base.cc(361)] Invalid audio output parameters received; using fake audio path: format: 0 channel_layout: 0 channels: 0 sample_rate: 0 frames_per_buffer: 0 effects: 0 mic_positions: 
 9월 06, 2018 11:12:42.22 [928:6604:0906/111242.220:ERROR:audio_manager_base.cc(361)] Invalid audio output parameters received; using fake audio path: format: 0 channel_layout: 0 channels: 0 sample_rate: 0 frames_per_buffer: 0 effects: 0 mic_positions: 
+
+9월 12, 2018 13:39:05.30 NEW SESSION
+9월 12, 2018 13:39:05.30 [10816:4588:0912/133905.275:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+9월 12, 2018 13:39:05.30 [10816:4588:0912/133905.275:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+9월 12, 2018 13:39:05.30 [10816:4588:0912/133905.275:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+9월 12, 2018 13:39:05.30 [10816:4588:0912/133905.275:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+9월 12, 2018 13:39:05.30 [10816:4588:0912/133905.275:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+9월 12, 2018 13:39:05.30 [10816:4588:0912/133905.275:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+9월 12, 2018 13:39:05.30 [10816:4588:0912/133905.275:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+9월 12, 2018 13:39:05.30 [10816:4588:0912/133905.275:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+9월 12, 2018 13:39:05.30 [10816:4588:0912/133905.275:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+9월 12, 2018 13:39:05.30 [10816:4588:0912/133905.275:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+9월 12, 2018 13:39:05.30 [10816:4588:0912/133905.275:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+9월 12, 2018 13:39:05.30 [10816:4588:0912/133905.275:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+9월 12, 2018 13:39:05.30 [10816:4588:0912/133905.275:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+9월 12, 2018 13:39:05.30 [10816:4588:0912/133905.275:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+9월 12, 2018 13:39:05.30 [10816:4588:0912/133905.275:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+9월 12, 2018 13:39:05.30 [10816:4588:0912/133905.275:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+9월 12, 2018 13:39:05.30 [10816:4588:0912/133905.275:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+9월 12, 2018 13:39:05.32 [10816:4588:0912/133905.275:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+9월 12, 2018 13:39:05.32 [10816:4588:0912/133905.275:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+9월 12, 2018 13:39:05.32 [10816:4588:0912/133905.275:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+9월 12, 2018 13:39:05.32 [10816:4588:0912/133905.275:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+9월 12, 2018 13:39:05.32 [10816:4588:0912/133905.275:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+9월 12, 2018 13:39:05.32 [10816:4588:0912/133905.275:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+9월 12, 2018 14:00:48.01 [10816:7356:0912/140048.011:ERROR:audio_manager_base.cc(366)] Invalid audio output parameters received; using fake audio path: format: 0 channel_layout: 0 channels: 0 sample_rate: 0 frames_per_buffer: 0 effects: 0 mic_positions: 

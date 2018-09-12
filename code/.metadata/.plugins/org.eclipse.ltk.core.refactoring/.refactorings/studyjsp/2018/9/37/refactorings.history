@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;studyjsp/WebContent/Jsp수업/187-1.jsp&apos; to &apos;187-1_content.jsp&apos;" description="Rename resource &apos;187-1.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/Jsp수업/187-1.jsp" name="187-1_content.jsp" stamp="1536730015364" updateReferences="true"/>
+</session>
