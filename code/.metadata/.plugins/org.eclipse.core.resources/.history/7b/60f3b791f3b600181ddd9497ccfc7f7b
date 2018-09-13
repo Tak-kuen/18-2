@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>1501163</title>
+</head>
+<body>
+	<%request.setCharacterEncoding("utf-8"); %>
+	
+	<jsp:useBean id="registerBean" class="ch08.register._274_RegisterBean">
+		<jsp:setProperty name="registerBean" property="*"/>
+	</jsp:useBean>
+	
+	<% registerBean.setReg_date(new Timestamp(System.currentTimeMillis())); %>
+	
+	<table
+
+</body>
+</html>

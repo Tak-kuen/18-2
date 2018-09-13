@@ -10,6 +10,5 @@
 	<jsp:forward page="185_templateTest.jsp">
 		<jsp:param name="contentPage" value="187-1_content.jsp"/>
 	</jsp:forward>
-
 </body>
 </html>
