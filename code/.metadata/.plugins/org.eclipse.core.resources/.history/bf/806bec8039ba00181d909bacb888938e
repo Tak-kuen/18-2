@@ -1,0 +1,7 @@
+import javax.swing.*;
+
+class MyFrame2 extends JFrame {
+	public MyFrame2() {
+		
+	}
+}

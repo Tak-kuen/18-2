@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;선형리스트0918&apos; to &apos;_0918LinearList&apos;&#x0D;&#x0A;- Original project: &apos;data_Structure&apos;&#x0D;&#x0A;- Original element: &apos;data_Structure/src/선형리스트0918&apos;&#x0D;&#x0A;- Renamed element: &apos;data_Structure/src/_0918LinearList&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;선형리스트0918&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;선형리스트0918" name="_0918LinearList" qualified="false" references="true" stamp="1537236632994" textual="false" version="1.0"/>
+</session>

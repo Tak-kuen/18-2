@@ -1,0 +1,12 @@
+import javax.swing.*;
+
+public class WDB {
+	public static void main(String[] args) {
+		//GUI프로그래밍을 위한 최상급 컨테이너 생성
+		JFrame f = new JFrame("9ood");
+		//컨테이너의 크기 설정
+		f.setSize(300,200);
+		//컨테이너를 화면에 출력
+		f.setVisible(true);
+	}
+}

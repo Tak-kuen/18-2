@@ -1,0 +1,9 @@
+
+import javax.swing.*;
+
+class MyFrame extends JFrame{
+	
+	public MyFrame() {
+		this.setSize(500,300);
+	}
+}

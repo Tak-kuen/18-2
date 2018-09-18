@@ -1,0 +1,52 @@
+import javax.swing.*;
+import java.awt.*;
+
+class Test extends JFrame {
+	public Test() {
+		setSize(600,450);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setTitle("title");
+		
+		JPanel panel1 = new JPanel();
+		panel1.setLayout(new FlowLayout());
+		JLabel id = new JLabel("학번");
+		JTextField id_tf = new JTextField();
+		id_tf.setText("1501163");
+		JLabel name = new JLabel("이름");
+		JTextField name_tf = new JTextField();
+		name_tf.setText("STK");
+		
+		JPanel panel2 = new JPanel();
+		panel2.setLayout(new GridLayout(4,3));
+		JLabel blank = new JLabel("");
+		panel2.add(blank);
+		JLabel ko = new JLabel("국어성적");
+		panel2.add(ko);
+		JLabel en = new JLabel("영어성적");
+		panel2.add(en);
+		JLabel _1_1 = new JLabel("1-1학기");
+		panel2.add(_1_1);
+		JLabel _1_1ko = new JLabel("10");
+		panel2.add(_1_1ko);
+		JLabel _1_1en = new JLabel("15");
+		panel2.add(_1_1en);
+		JLabel _1_2 = new JLabel("1-2학기");
+		panel2.add(_1_2);
+		JLabel _1_2ko = new JLabel("20");
+		panel2.add(_1_2ko);
+		JLabel _1_2en = new JLabel("30");
+		panel2.add(_1_2en);
+		JLabel _2_1 = new JLabel("2-1학기");
+		panel2.add(_2_1);
+		JLabel _2_1ko = new JLabel("10");
+		panel2.add(_2_1ko);
+		JLabel _2_1en = new JLabel("40");
+		panel2.add(_2_1en);
+		
+		
+		
+		
+		this.add(panel1);
+		setVisible(true);
+	}
+}
