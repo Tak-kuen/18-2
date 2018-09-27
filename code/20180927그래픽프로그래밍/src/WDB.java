@@ -16,11 +16,13 @@ class MyPanel extends JPanel {
 		g.drawArc(275, 225, 50, 50, 225, 90);
 		g.fillOval(244, 144, 12, 12);
 		g.fillOval(344, 144, 12, 12);
+		g.drawString("1501163 º€≈π±Ÿ", 260, 550);
 		g.setColor(Color.RED);
 		g.fillOval(250, 170, 100, 60);
 		g.setColor(Color.WHITE);
 		g.fillOval(270,192, 16, 16);
 		g.fillOval(310,192, 16, 16);
+		
 	}
 }
 
