@@ -149,7 +149,14 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="studyjsp" path="/studyjsp" reloadable="true" source="org.eclipse.jst.jee.server:studyjsp"/><Context docBase="1501163-report1" path="/1501163-report1" reloadable="true" source="org.eclipse.jst.jee.server:1501163-report1"/></Host>
+      <Context docBase="studyjsp" path="/studyjsp" reloadable="true" source="org.eclipse.jst.jee.server:studyjsp">
+      <Resource name="jdbc/test" auth="Container" type="javax.sql.DataSource"
+        maxTotal="100" maxIdle="30" maxWaitMillis="10000"
+        username="root" password="1234" driverClassName="org.mariadb.jdbc.Driver"
+        url="jdbc:mariadb://localhost:3306/test"/>
+      </Context>
+      <Context docBase="1501163-report1" path="/1501163-report1" reloadable="true" source="org.eclipse.jst.jee.server:1501163-report1"/>
+      	</Host>
     </Engine>
   </Service>
 </Server>

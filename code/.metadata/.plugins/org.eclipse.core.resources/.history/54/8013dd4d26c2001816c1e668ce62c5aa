@@ -1,0 +1,29 @@
+import javax.swing.*;
+import java.awt.*;
+
+class MyPanel extends JPanel {
+	public MyPanel() {
+		
+	}
+}
+
+
+class MyFrame extends JFrame {
+	public MyFrame() {
+		setTitle("그래픽테스트");
+		setSize(500,400);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setVisible(true);
+		
+		//Panel을 생성하여 추가한다.
+		MyPanel myPanel = new MyPanel();
+		add(myPanel);
+	}
+}
+
+public class WDB {
+	public static void main(String[] args) {
+		MyFrame myFrame = new MyFrame();
+	}
+	
+}

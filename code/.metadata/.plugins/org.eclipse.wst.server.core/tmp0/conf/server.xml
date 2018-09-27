@@ -149,7 +149,11 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="D:\1501163\code\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\1501163\code\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\studyjsp" path="/studyjsp" reloadable="true" source="org.eclipse.jst.jee.server:studyjsp"/><Context docBase="D:\1501163\code\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\1501163-report1" path="/1501163-report1" reloadable="true" source="org.eclipse.jst.jee.server:1501163-report1"/></Host>
+      <Context docBase="D:\1501163\code\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="D:\1501163\code\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\studyjsp" path="/studyjsp" reloadable="true" source="org.eclipse.jst.jee.server:studyjsp">
+      <Resource auth="Container" driverClassName="org.mariadb.jdbc.Driver" maxIdle="30" maxTotal="100" maxWaitMillis="10000" name="jdbc/test" password="1234" type="javax.sql.DataSource" url="jdbc:mariadb://localhost:3306/test" username="root"/>
+      </Context>
+      <Context docBase="D:\1501163\code\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\1501163-report1" path="/1501163-report1" reloadable="true" source="org.eclipse.jst.jee.server:1501163-report1"/>
+      	</Host>
     </Engine>
   </Service>
 </Server>

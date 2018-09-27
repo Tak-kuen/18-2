@@ -1,0 +1,17 @@
+import javax.swing.*;
+import java.awt.*;
+
+class Test extends JPanel {
+
+	@Override
+	protected void paintComponent(Graphics g) {
+		// TODO Auto-generated method stub
+		super.paintComponent(g);
+		g.setColor(Color.PINK);
+		g.fillOval(200, 100, 200, 200);	//Áß½ÉÁÂÇ¥ 200,100
+		g.drawLine(300,300,300,450);
+	}
+	
+	
+	
+}
