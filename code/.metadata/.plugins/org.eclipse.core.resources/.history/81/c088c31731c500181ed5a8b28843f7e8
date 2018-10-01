@@ -1,0 +1,16 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+
+class MyPanel1 extends JPanel implements ActionListener {
+	JButton button;
+	Color color = new Color(0,0,0);
+	
+	public void actionPerformed(ActionEvent e) {
+		
+	}
+	
+	
+	
+}

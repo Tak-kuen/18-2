@@ -1,0 +1,39 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+//이벤트 넣기
+//1. 리스너 인터페이스를 상속
+//2. 버튼에 리스너 등록
+//3. 리스너 이벤트 처리 메소드 구현
+	
+class MyPanel extends JPanel implements ActionListener {	//1번과정
+	
+		private	JButton button;
+		private Color color = new Color(0,0,0);
+		
+		public MyPanel() {
+			setLayout(new BorderLayout());
+			button = new JButton("색상변경");
+			button.addActionListener(this);					//2번과정
+			add(button, BorderLayout.SOUTH);
+		}
+		
+		@Override
+		protected void paintComponent(Graphics g) {
+			// TODO Auto-generated method stub
+			super.paintComponent(g);
+			g.setColor(color);
+			g.fillRect(10, 10, 270, 520);
+		}
+
+		public void actionPerformed(ActionEvent e) {		//3번과정
+			color = new Color((int)(Math.random()*255.0),
+					(int)(Math.random()*255.0),(int)(Math.random()*255.0));
+			System.out.println("dd");
+			repaint();
+		}
+		
+		
+		
+	}
+
