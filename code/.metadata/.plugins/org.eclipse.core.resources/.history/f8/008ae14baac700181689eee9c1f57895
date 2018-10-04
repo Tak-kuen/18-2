@@ -1,0 +1,19 @@
+package 이벤트181004;
+
+import java.awt.Color;
+import 이벤트181004.MyFrame1_402;
+import java.awt.event.*;
+
+import javax.swing.*;
+
+public class MyListener1 implements ActionListener {
+	public MyListener1(JPanel myPanel) {
+		
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		MyFrame1_402.
+	}
+
+}

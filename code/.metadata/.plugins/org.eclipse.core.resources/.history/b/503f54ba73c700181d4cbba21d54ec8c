@@ -1,0 +1,102 @@
+package practice_181004;
+
+import java.io.IOException;
+import java.sql.*;
+import javax.sql.*;
+
+import javafx.animation.SequentialTransitionBuilder;
+
+import javax.naming.*;
+import java.util.ArrayList;
+
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class TodoServlet
+ */
+@WebServlet("/TodoServlet")
+public class TodoServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public TodoServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		request.getRequestDispatcher("Jsp수업/372_todo.jsp").forward(request,response);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		request.getRequestDispatcher("Jsp수업/372_todo.jsp").forward(request,response);
+	}
+	
+	private ArrayList<TodoBean> getList() {
+		ArrayList<TodoBean> list =null;
+		TodoBean bean=new TodoBean();
+		String detail;
+		boolean is_done;
+		Connection conn=null;
+		PreparedStatement pstmt=null;
+		ResultSet rs = null;
+		
+		try {
+			Context initCtx = new InitialContext();
+			Context envCtx = (Context) initCtx.lookup("java:comp/env");
+			DataSource ds = (DataSource) envCtx.lookup("jdbc/test");
+			conn= ds.getConnection();
+			
+			list=new ArrayList<>();
+			
+			String sql="select * from todo";
+			pstmt=conn.prepareStatement(sql);
+			rs=pstmt.executeQuery();
+			
+			if(rs.next()) {
+				detail=rs.getString("detail");
+				if(rs.getString("done").equals("1")) {
+					is_done=true;
+				}else {
+					is_done=false;
+				}	//id_done
+				bean.setId();
+				bean.setDetail(detail);
+				bean.setDone(is_done);
+				
+			} else {
+				System.out.println("데이터가 없습니다.");
+			}//rs.next()
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			if(rs!=null){
+				try{rs.close();}catch(SQLException sqle) {}
+			}
+			if(pstmt!=null){
+				try{pstmt.close();}catch(SQLException sqle){}
+			}
+			if(conn!=null) {
+				try{conn.close();} catch(SQLException sqle){}
+			}
+		}
+		
+	return list;
+	}
+
+}

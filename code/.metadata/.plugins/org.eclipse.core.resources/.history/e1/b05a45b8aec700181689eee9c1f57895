@@ -1,0 +1,29 @@
+package ¿Ã∫•∆Æ181004;
+
+import java.awt.event.*;
+import javax.swing.*;
+
+class MyKeyListener implements KeyListener {
+	JPanel myPanel = null;
+	MyKeyListener(JPanel myPanel) {
+		this.myPanel = myPanel;
+	}
+	@Override
+	public void keyPressed(KeyEvent e) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void keyReleased(KeyEvent e) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void keyTyped(KeyEvent e) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
