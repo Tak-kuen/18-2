@@ -1,0 +1,23 @@
+package ¿Ã∫•∆Æ181008;
+
+import java.awt.BorderLayout;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+import javax.swing.*;
+
+class MyPanel extends JPanel {
+	BufferedImage img=null;
+	
+	public MyPanel() {
+		setLayout(new BorderLayout());
+		try {
+			img = ImageIO.read(new File("C:\\Users\\bon320-14\\Desktop\\Files\\icon.png"));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

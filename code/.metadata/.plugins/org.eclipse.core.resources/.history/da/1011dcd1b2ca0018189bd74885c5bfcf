@@ -1,0 +1,17 @@
+package 이벤트181008;
+
+import java.awt.FlowLayout;
+import javax.swing.*;
+
+class MyFrameS extends JFrame {
+	
+	MyFrameS() {
+		this.setSize(300,200);
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setTitle("이벤트예제");
+		this.setLayout(new FlowLayout());
+		JPanel myPanel = new MyPanelS();
+		add(myPanel);
+		this.setVisible(true);
+	}
+}

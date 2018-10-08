@@ -1,0 +1,5 @@
+package ¿Ã∫•∆Æ181008;
+
+public class WDB {
+	MyFrame myFrame = new MyFrame();
+}

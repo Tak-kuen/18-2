@@ -1,0 +1,7 @@
+package ¿Ã∫•∆Æ181008;
+
+import javax.swing.JPanel;
+
+public class TrafficPanel extends JPanel {
+
+}

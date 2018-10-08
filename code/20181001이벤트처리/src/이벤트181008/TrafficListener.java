@@ -1,0 +1,19 @@
+package ¿Ã∫•∆Æ181008;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+class TrafficListener implements ActionListener {
+	TrafficPanel tPanel;
+	
+	TrafficListener(TrafficPanel tPanel) {
+		this.tPanel=tPanel;
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		tPanel.count++;
+		tPanel.repaint();
+	}
+
+}
