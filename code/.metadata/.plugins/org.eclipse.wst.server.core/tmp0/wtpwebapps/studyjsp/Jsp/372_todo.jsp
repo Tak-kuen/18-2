@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import ="practice_181004.TodoBean, java.util.ArrayList" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,15 +20,13 @@
 	</form>
 	<h3>조회하기</h3>
 	<ul>
-	<%
-		ArrayList<TodoBean> todoList = (ArrayList<TodoBean>)session.getAttribute("todoList");
-		if(todoList !=null) {
-			for(int i=0; i<todoList.size();i++) {%>
-				<li ><%=todoList.get(i).getDetail() %>
-			<%}
-			
-			 }%>
+	<c:if test="${todoList != null}">
+		<c:forEach var="list" items="${todoList}">
+			<li>${list.detail}</li>
+		</c:forEach>
+	</c:if>
 	</ul>
+	
 
 </body>
 </html>

@@ -172,3 +172,68 @@
 10월 05, 2018 18:54:15.28 [1428:10644:1005/185415.286:ERROR:audio_manager_base.cc(366)] Invalid audio output parameters received; using fake audio path: format: 0 channel_layout: 0 channels: 0 sample_rate: 0 frames_per_buffer: 0 effects: 0 mic_positions: 
 10월 05, 2018 19:14:18.68 [1428:10644:1005/191418.689:ERROR:audio_manager_base.cc(366)] Invalid audio output parameters received; using fake audio path: format: 0 channel_layout: 0 channels: 0 sample_rate: 0 frames_per_buffer: 0 effects: 0 mic_positions: 
 10월 05, 2018 19:14:18.74 [1428:10644:1005/191418.741:ERROR:audio_manager_base.cc(366)] Invalid audio output parameters received; using fake audio path: format: 0 channel_layout: 0 channels: 0 sample_rate: 0 frames_per_buffer: 0 effects: 0 mic_positions: 
+
+10월 11, 2018 09:38:23.14 NEW SESSION
+10월 11, 2018 09:38:23.14 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.18 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.18 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.18 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.18 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.18 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.18 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.20 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.20 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.20 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.20 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.20 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.20 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.20 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.20 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.20 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.20 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.20 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.20 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.20 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.21 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.21 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.21 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.21 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.21 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.21 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.21 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.21 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.21 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.21 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.22 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.22 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.23 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.23 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.23 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.23 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.23 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.23 [7280:3460:1011/093823.140:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.23 [7280:3460:1011/093823.187:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.23 [7280:3460:1011/093823.187:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.23 [7280:3460:1011/093823.187:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.23 [7280:3460:1011/093823.187:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.23 [7280:3460:1011/093823.187:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.24 [7280:3460:1011/093823.187:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.24 [7280:3460:1011/093823.187:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.24 [7280:3460:1011/093823.187:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.24 [7280:3460:1011/093823.187:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.24 [7280:3460:1011/093823.187:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.24 [7280:3460:1011/093823.187:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.24 [7280:3460:1011/093823.187:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.24 [7280:3460:1011/093823.187:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.24 [7280:3460:1011/093823.187:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.24 [7280:3460:1011/093823.187:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.24 [7280:3460:1011/093823.187:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.24 [7280:3460:1011/093823.187:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.25 [7280:3460:1011/093823.187:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.25 [7280:3460:1011/093823.187:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.25 [7280:3460:1011/093823.187:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.25 [7280:3460:1011/093823.187:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.25 [7280:3460:1011/093823.187:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.25 [7280:3460:1011/093823.187:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:38:23.25 [7280:3460:1011/093823.187:ERROR:in_progress_cache_impl.cc(192)] Cache is not initialized, cannot RetrieveEntry.
+10월 11, 2018 09:54:34.25 [7280:6900:1011/095434.259:ERROR:audio_manager_base.cc(366)] Invalid audio output parameters received; using fake audio path: format: 0 channel_layout: 0 channels: 0 sample_rate: 0 frames_per_buffer: 0 effects: 0 mic_positions: 

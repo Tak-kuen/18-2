@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import = "java.util.*,product_181010.ProductBean" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Product</title>
+</head>
+<body>
+	<form>
+	<%
+	int i=0;
+	ArrayList<ProductBean> list = (ArrayList<ProductBean>)session.getAttribute("productList");
+	if(list!=null) {
+		out.println("총" + list.size() + "개 상품");
+		for(i =0; i<list.size(); i++) { %>
+			<input type="checkbox" name="selected" value="<%= i+1%>">
+			<%out.println(list.get(i).getName() + " "
+					+ list.get(i).getInfo() + " " + list.get(i).getPrice());%><br/>
+		}		
+	}	
+	else out.println("등록된 상품이 없습니다.");
+				
+%>	</form>
+</body>
+</html>

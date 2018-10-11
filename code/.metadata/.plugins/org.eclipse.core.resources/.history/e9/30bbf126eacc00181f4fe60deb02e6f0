@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import = "java.util.*,product_181010.ProductBean" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Product</title>
+</head>
+<body>
+<%
+	ArrayList<ProductBean> list = (ArrayList<ProductBean>)session.getAttribute("productList");
+	
+%>
+</body>
+</html>
