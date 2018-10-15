@@ -4,12 +4,12 @@ package _1002addPoly;
 public class Ex5_4 {
 
 	public static void main(String[] args) {
-		float a[] = new float[] {4,3,5,0};
-		float b[] = new float[] {3,1,0,2,1};
-		Polynomial A = new Polynomial(3,a);
-		Polynomial B = new Polynomial(4,b);
-		OperatePoly optPoly = new OperatePoly();
-		Polynomial C = optPoly.addPoly(A,B);
+		float a[] = new float[] {4,3,5,0};		//다항식 a
+		float b[] = new float[] {3,1,0,2,1};	//다항식 b
+		Polynomial A = new Polynomial(3,a);		//최고차항의 계수가 3인 다항식A 생성
+		Polynomial B = new Polynomial(4,b);		//최고차항의 계수가 4인 다항식B 생성
+		OperatePoly optPoly = new OperatePoly();//다항식계산하는 객체 생성
+		Polynomial C = optPoly.addPoly(A,B);	//다항식덧셈 수행
 		System.out.printf("A(x) = "); A.printPoly();
 		System.out.printf("B(x) = "); B.printPoly();
 		System.out.printf("C(x) = "); C.printPoly();
