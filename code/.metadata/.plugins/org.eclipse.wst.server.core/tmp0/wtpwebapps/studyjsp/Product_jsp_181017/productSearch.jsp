@@ -18,13 +18,11 @@
 	등록된 상품이 없습니다.
 	</c:if>
 	<c:if test="${productList != null}">
-		<form>
 			<c:forEach var="p" items="${productList}">
 			검색어&nbsp;:&nbsp;${p.name}<br/>
 			결과<br/>
 			${p.id }&nbsp;:&nbsp;${p.name}&nbsp; ${p.info}&nbsp; ${p.price}<br/>
 			</c:forEach>
-		</form>
 	</c:if>
 </body>
 </html>

@@ -10,7 +10,7 @@
 <body>
 	<%-- jstl 사용하면 import 할 필요도 없어진다! 372_todo.jsp와 비교해 보자 --%>
 	<%-- <c:if test="${empty productList}"> 왼쪽은 널체크시 간단한 구문
-	있을대는 not empty사용 아래는 띄어쓰기 구분--%>
+	있을때는 not empty사용 아래는 띄어쓰기 구분--%>
 	<c:if test="${productList == null}">
 	등록된 상품이 없습니다.
 	</c:if>
