@@ -1,0 +1,27 @@
+package _20181022연결리스트;
+
+import java.util.LinkedList;
+
+public class WDB {
+	public static void main(String[] args) {
+		LinkedList<String> list = new LinkedList<>();
+		//추가
+		list.add("우유");
+		list.add("빵");
+		list.add("버터");
+		
+		for(int i =0;i<list.size();i++) {
+			System.out.println(list.get(i));
+		}
+		
+		list.set(1,"소보루");
+		for(String s : list) {
+			System.out.println(s);
+		}
+		
+		
+		
+	}
+	
+	
+}

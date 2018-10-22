@@ -1,0 +1,29 @@
+package _20181022쓰레드;
+// 1. Thread클래스를 상속받아 클래스를 작성
+// 2. run메소드 재정의
+// 3. Thread 객체 생성
+// 4. start메소드 호출
+
+//1. Thread클래스를 상속받아 클래스를 작성
+class MyThread extends Thread{
+	
+	//2. run메소드 재정의
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		for(int i=0 ; i<100 ; i++) {
+			System.out.print(i + " ");
+		}
+	}
+
+	
+}
+
+public class WDB {
+	public static void main(String[] args) {
+		// 3. Thread 객체 생성	
+		MyThread t = new MyThread();
+		t.start();
+	}
+
+}

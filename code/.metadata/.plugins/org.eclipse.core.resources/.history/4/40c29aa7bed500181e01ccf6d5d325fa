@@ -1,0 +1,7 @@
+package _20181022¾²·¹µå;
+
+public class ThreadInteference {
+	public static void main(String[] args) {
+		InterferenceTest t = new InterferenceTest(new Counter());
+	}
+}
