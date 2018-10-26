@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>1501163</title>
+</head>
+<body>
+아이디와 비밀번호 입력
+	<form>
+		<input id="userid" type="text"><br>
+		<input id="password" type="password"><br>
+		<input id="b1" type="button" value="확인"><br>
+	</form>
+	결과
+	
+
+</body>
+</html>

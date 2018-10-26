@@ -1,0 +1,8 @@
+{
+	"members":
+		[{"memberNumber" : "m001",
+			"name":"nvidia",
+			"picture":"nvidia.gif"},
+		{"memberNumber" : "m002",
+			"name":"ryzen",
+			"picture":"ryzen.gif"}
