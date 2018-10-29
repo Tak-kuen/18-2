@@ -1,0 +1,16 @@
+package _20181029¾²·¹µå;
+
+class Buffer {
+	private int data;
+	private boolean empty=true;
+	
+	public synchronized int get() {
+		
+		return data;
+	}
+	
+	public synchronized void put(int data) {
+		
+		this.data=data;
+	}
+}

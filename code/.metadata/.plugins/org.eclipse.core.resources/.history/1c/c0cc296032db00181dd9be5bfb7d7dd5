@@ -1,0 +1,20 @@
+package _20181029¾²·¹µå;
+
+class Buffer {
+	private int data;
+	private boolean empty=true;
+	
+	public  int get() {
+		
+		empty=true;
+		
+		return data;
+	}
+	
+	public  void put(int data) {
+	
+		empty=false;
+		this.data=data;
+		
+	}
+}

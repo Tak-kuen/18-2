@@ -1,0 +1,25 @@
+package _20181029쓰레드;
+
+class Buffer {
+	private int data;
+	private boolean empty=true;
+	//비어있으면 true, 물건이 있으면 false
+	
+	public synchronized int get() {
+		while(empty) {
+			try {
+				wait();
+			} catch(InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		empty=true;
+		return data;
+	}
+	
+	public synchronized void put(int data) {
+		empty=false;
+		this.data=data;
+		notifyAll();
+	}
+}
