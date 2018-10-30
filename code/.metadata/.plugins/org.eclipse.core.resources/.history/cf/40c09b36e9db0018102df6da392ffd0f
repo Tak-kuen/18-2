@@ -1,0 +1,83 @@
+//1501163 ¼ÛÅ¹±Ù
+
+package _1030Stack;
+
+interface Stack {
+	boolean isEmpty();
+	void push(char item);
+	char pop();
+	void delete();
+	char peek();
+}
+
+class ArrayStack implements Stack {
+	private int top;
+	private int stackSize;
+	private char itemArray[];
+	
+	public ArrayStack(int stackSize) {
+		top= -1;
+		this.stackSize=stackSize;
+		itemArray = new char[this.stackSize];
+	}//constructor
+	
+	public boolean isEmpty() {	return (top== -1);	}
+	public boolean isFull() {	return(top== this.stackSize-1);	}
+	
+	public void push(char item) {
+		if(isFull()) {
+			System.out.println("Inserting fail! Array Stack is full!!");
+		}else {
+			itemArray[++top] = item;
+			System.out.println("Inserted Item : " + item);
+		}// if-else
+	}//push
+	
+	public char pop() {
+		if(isEmpty()) {
+			System.out.println("Deleting fail! Array Stack is empty!");
+			return 0;
+		}else {
+			return itemArray[top--];
+		}//if-else
+	}//pop
+	
+	public void delete() {
+		if(isEmpty()) {
+			System.out.println("Deleting fail! Array Stack is empty!!");
+		}else {
+			top--;
+		}//if-else
+	}//delete
+	
+	public char peek() {
+		if(isEmpty()) {
+			System.out.println("Peeking fail! Array Stack is empty!!");
+			return 0;
+		}else {
+			return itemArray[top];
+		}//if-else
+	}//peek
+	
+	public void printStack() {
+		if(isEmpty()) {
+			System.out.printf("Array Stack is empty!! \n \n");
+		}else {
+			System.out.printf("Array Stack>> ");
+			for(int i =0; i<=top ; i++) {
+				System.out.printf("%c ", itemArray[i]);
+			}//for
+			System.out.println(); System.out.println();
+		}//if-else
+	}//printStack()
+}
+
+
+public class Ex7_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
