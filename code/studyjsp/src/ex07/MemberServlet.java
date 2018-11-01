@@ -32,6 +32,7 @@ public class MemberServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		//response.getWriter()의 리턴형이 jsp의 out이다
+		//servlet으로 실행하거나 파일경로 쳐서 접속했을때 Served at: 경로주소로 뜬다 
 	}
 
 	/**

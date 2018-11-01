@@ -1,0 +1,5 @@
+package ch11.logon;
+
+public class LogonDataBean {
+
+}

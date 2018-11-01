@@ -9,7 +9,11 @@
 <script>
 	$(document).ready(function() {
 		$("#b1").click(function() {
-			var query={ userid:	$("#userid").val(), password: $("#password").val() };//query
+			var query={
+					userid:	$("#userid").val(),
+					password: $("#password").val()
+			};//query
+			
 			$.ajax({
 				type:"POST",
 				url:"/studyjsp/MemberServlet",
@@ -26,7 +30,7 @@
 						$("#userid").val("")
 						$("#password").val("");
 						$("#userid").focus();
-					}//else-if
+					}//if - else if
 				}//success
 			});//ajax
 		});//#b1

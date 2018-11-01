@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>LoginForm</title>
+</head>
+<body>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="login.js"></script>
+
+<c:set var="id" value="" />
+<c:if test="${empty id }">
+	<div id="status">
+		<ul>
+			<li><label for="id">아이디</label><input id="id" name="id" type="email" size="20" maxlength="50">
+			<li>
+	</div>
+</c:if>
+</body>
+</html>
