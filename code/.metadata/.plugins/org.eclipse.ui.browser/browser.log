@@ -459,3 +459,16 @@
 11월 01, 2018 19:11:21.05 [9968:6648:1101/191121.054:ERROR:extension_protocols.cc(565)] Allowing load of chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/include.postload.js.mapfrom unknown origin. Could not find user data for request.
 11월 01, 2018 19:11:35.89 [9968:6648:1101/191135.892:ERROR:extension_protocols.cc(565)] Allowing load of chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/include.preload.js.mapfrom unknown origin. Could not find user data for request.
 11월 01, 2018 19:11:35.89 [9968:6648:1101/191135.893:ERROR:extension_protocols.cc(565)] Allowing load of chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/include.postload.js.mapfrom unknown origin. Could not find user data for request.
+
+11월 05, 2018 21:31:14.76 NEW SESSION
+11월 05, 2018 21:31:14.76 [5508:12384:1105/213114.756:ERROR:extension_protocols.cc(565)] Allowing load of chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/include.preload.js.mapfrom unknown origin. Could not find user data for request.
+11월 05, 2018 21:31:14.76 [5508:12384:1105/213114.758:ERROR:extension_protocols.cc(565)] Allowing load of chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/include.postload.js.mapfrom unknown origin. Could not find user data for request.
+11월 05, 2018 21:33:36.12 [5508:12384:1105/213336.121:ERROR:extension_protocols.cc(565)] Allowing load of chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/include.preload.js.mapfrom unknown origin. Could not find user data for request.
+11월 05, 2018 21:33:36.18 [5508:12384:1105/213336.179:ERROR:extension_protocols.cc(565)] Allowing load of chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/include.postload.js.mapfrom unknown origin. Could not find user data for request.
+11월 05, 2018 21:33:44.28 [5508:12384:1105/213344.284:ERROR:extension_protocols.cc(565)] Allowing load of chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/include.preload.js.mapfrom unknown origin. Could not find user data for request.
+11월 05, 2018 21:33:44.31 [5508:12384:1105/213344.313:ERROR:extension_protocols.cc(565)] Allowing load of chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/include.postload.js.mapfrom unknown origin. Could not find user data for request.
+11월 05, 2018 21:33:56.35 [5508:10952:1105/213356.356:ERROR:textfield.cc(1767)] NOT IMPLEMENTED
+11월 05, 2018 21:34:04.78 [5508:12384:1105/213404.783:ERROR:extension_protocols.cc(565)] Allowing load of chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/include.preload.js.mapfrom unknown origin. Could not find user data for request.
+11월 05, 2018 21:34:04.80 [5508:12384:1105/213404.804:ERROR:extension_protocols.cc(565)] Allowing load of chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/include.postload.js.mapfrom unknown origin. Could not find user data for request.
+11월 05, 2018 21:34:09.81 [5508:12384:1105/213409.819:ERROR:extension_protocols.cc(565)] Allowing load of chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/include.preload.js.mapfrom unknown origin. Could not find user data for request.
+11월 05, 2018 21:34:09.84 [5508:12384:1105/213409.842:ERROR:extension_protocols.cc(565)] Allowing load of chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/include.postload.js.mapfrom unknown origin. Could not find user data for request.

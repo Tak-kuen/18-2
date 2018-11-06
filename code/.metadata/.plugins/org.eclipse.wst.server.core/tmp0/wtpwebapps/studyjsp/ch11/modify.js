@@ -35,7 +35,6 @@ $(document).ready(function() {
 			url:"modifyPro.jsp",
 			data:query,
 			success:function(data) {
-				console.log("1");
 				if(data==1) {
 					alert("수정되었습니다.");
 					location.href="main.jsp";
