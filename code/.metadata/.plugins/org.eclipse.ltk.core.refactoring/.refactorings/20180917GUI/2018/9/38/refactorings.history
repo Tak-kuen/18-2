@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Move &apos;images.png&apos; to &apos;20180917GUI&apos;" description="Move &apos;images.png&apos; to &apos;20180917GUI&apos;" destination="/20180917GUI" element1="src/images.png" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1537159287595" updateReferences="true"/>&#x0A;<refactoring comment="Move &apos;nvidia.gif&apos; to &apos;20180917GUI&apos;" description="Move &apos;nvidia.gif&apos; to &apos;20180917GUI&apos;" destination="/20180917GUI" element1="src/nvidia.gif" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1537159308648" updateReferences="true"/>
-</session>

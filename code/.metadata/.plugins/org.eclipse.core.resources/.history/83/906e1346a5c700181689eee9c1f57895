@@ -1,8 +1,0 @@
-package 이벤트181004;
-// 내부클래스로 이벤트 구현
-
-public class WDB {
-	public static void main(String[] args) {
-		MyFrame myFrame = new MyFrame();
-	}
-}

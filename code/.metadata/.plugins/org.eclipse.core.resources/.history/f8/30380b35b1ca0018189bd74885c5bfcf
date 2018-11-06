@@ -1,7 +1,0 @@
-package ¿Ã∫•∆Æ181008;
-
-import javax.swing.*;
-
-class MyPanel extends JPanel {
-
-}

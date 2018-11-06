@@ -1,5 +1,0 @@
-package ch08.bean;
-
-public class TestBean {
-	private String id;
-}

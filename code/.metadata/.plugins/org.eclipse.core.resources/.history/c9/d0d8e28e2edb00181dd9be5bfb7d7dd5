@@ -1,9 +1,0 @@
-package _20181029¾²·¹µå;
-
-class Consumer {
-	private Buffer buffer;
-	
-	public Consumer(Buffer buffer) {
-		this.buffer=buffer;
-	}
-}

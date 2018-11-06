@@ -1,9 +1,0 @@
-package ¿Ã∫•∆Æ181008;
-
-import javax.swing.*;
-class TrafficFrame {
-	TrafficFrame() {
-		setSize(400,600);
-		
-	}
-}

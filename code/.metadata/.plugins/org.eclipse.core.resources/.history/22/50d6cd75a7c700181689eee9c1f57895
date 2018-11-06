@@ -1,7 +1,0 @@
-package ¿Ã∫•∆Æ181004;
-
-import javax.swing.JFrame;
-
-public class MyFrame1 extends JFrame {
-
-}

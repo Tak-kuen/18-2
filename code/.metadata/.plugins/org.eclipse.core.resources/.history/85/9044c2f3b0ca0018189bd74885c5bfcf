@@ -1,7 +1,0 @@
-package ¿Ã∫•∆Æ181008;
-
-import java.awt.Component;
-
-class MyPanel extends Component {
-
-}

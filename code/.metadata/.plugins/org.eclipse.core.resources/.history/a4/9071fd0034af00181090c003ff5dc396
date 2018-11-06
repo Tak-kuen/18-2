@@ -1,7 +1,0 @@
-import java.sql.*;
-
-class MyDB {
-	Connection conn;
-	Statement stmt;
-	ResultSet rs;
-}
