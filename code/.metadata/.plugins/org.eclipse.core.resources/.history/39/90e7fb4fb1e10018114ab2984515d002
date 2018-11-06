@@ -12,15 +12,14 @@ interface Stack<T> {
 }
 class StackNode<T> {
 	T data;
-	StackNode<T> link;
+	StackNode link;
 }
-class LinkedStack<T> implements Stack<T> {
-	private StackNode<T> top;
+class LinkedStack<T> implements Stack {
+	private StackNode top;
 	
 	@Override
 	public boolean isEmpty() {	return (top==null);}
 
-	@SuppressWarnings("unchecked")
 	@Override
 	public void push(Object item) {
 		StackNode<T> newNode = new StackNode<>();
@@ -83,7 +82,6 @@ class OptExp {
 	
 	public boolean testPair(String exp) {
 		this.exp=exp;
-		@SuppressWarnings("rawtypes")
 		LinkedStack S = new LinkedStack();
 		expSize = this.exp.length();
 		for(int i=0; i<expSize ; i++) {
@@ -112,7 +110,6 @@ class OptExp {
 		int expSize=10;
 		int j=0;
 		char postfix[] = new char[expSize];
-		@SuppressWarnings("rawtypes")
 		LinkedStack S = new LinkedStack();
 		
 		for(int i=0; i<=expSize;i++) {
@@ -135,7 +132,6 @@ class OptExp2 {
 	private String exp;
 	
 	public int evalPostfix(String postfix) {
-		@SuppressWarnings("rawtypes")
 		LinkedStack S = new LinkedStack();
 		exp=postfix;
 		int opr1, opr2, value;
