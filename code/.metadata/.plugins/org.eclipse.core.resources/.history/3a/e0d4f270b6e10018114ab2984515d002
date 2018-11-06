@@ -1,0 +1,86 @@
+package _20181105입출력;
+
+import java.io.*;
+import java.util.Date;
+
+class  WDB {
+	public void write() {
+		//바이너리 파일을 생성해 데이터를 저장
+		//기초 자료형 단위로 데이터 저장하기 위한 클래스
+		DataOutputStream dos = null;
+		
+		FileOutputStream fos;
+		try {
+			fos = new FileOutputStream("D:\\1501163\\code\\20181101�����\\src\\_20181105�����\\test.bin");
+			BufferedOutputStream bos = new BufferedOutputStream(fos);
+			dos = new DataOutputStream(bos);
+			
+			//���Ͽ� �������� ����
+			dos.writeInt(100);
+			//���Ͽ� �Ǽ����� ����
+			dos.writeDouble(3.141592);
+			//���Ͽ� ���ڿ��� ����
+			dos.writeUTF("F*ck");
+			//���� ���Ͽ� ����
+			dos.flush();
+			dos.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	public void read() {
+		//���̳ʸ� ������ ������ �����͸� ����
+		//���� �ڷ��� ������ ������ �����ϱ� ���� Ŭ����
+		DataInputStream dis = null;
+		
+		FileInputStream fis;
+		try {
+			fis = new FileInputStream("D:\\1501163\\code\\20181101�����\\src\\_20181105�����\\test.bin");
+			BufferedInputStream bis = new BufferedInputStream(fis);
+			dis = new DataInputStream(bis);
+			
+			//���Ϸκ��� �������� �о��
+			int a = dis.readInt();
+			double b= dis.readDouble();
+			String c = dis.readUTF();
+			System.out.printf("������ : %d �Ǽ��� : %f ���ڿ� : %s",a,b,c);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void serial() {
+		ObjectInputStream ois = null;
+		ObjectOutputStream oos =null;
+		
+		Date a = new Date();
+		System.out.println(a);
+		try {
+			oos=new ObjectOutputStream( new FileOutputStream("D:\\object.dat"));
+			oos.writeObject(a);
+			oos.flush();
+			oos.close();
+			
+			Thread.sleep(10000);
+			ois = new ObjectInputStream(new FileInputStream("D:\\object.dat"));
+			
+			Date b = (Date)ois.readObject();
+			System.out.println(b);
+		} catch (IOException | InterruptedException | ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+	}
+}
+
+public class DataStreamTest{
+	public static void main(String[] args) {
+		WDB test = new WDB();
+//		test.write();
+//		test.read();
+		test.serial();
+	}
+}

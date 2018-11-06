@@ -1,0 +1,35 @@
+﻿할일에 대한 내용 추가 및 조회
+1. table 생성
+todo(_id : int , detail : String , done : boolean)
+
+2.todo.jsp
+-> 화면 상단에 입력 폼 작성
+jsp와 서블릿 제대로 연결시키기(서블릿 @WebServlet("/TodoServlet") 확인)
+
+3.TodoServlet
+jsp 경로가 다를경우
+request.getRequestDispatcher("Jsp수업/372_todo.jsp").forward(request,response);
+-> doGet : DB에서 todo 목록을 읽어 세션에 저장 후
+  todo.jsp로 리다이렉트
+-> doPost : DB에 할 일 추가 후 목록을 읽어 세션에 저장 후
+ todo.jsp로 리다이렉트
+
+4.TodoBean생성
+변수 선언 및 getter setter생성
+
+5.서블릿에서 db조회하는 메소드 작성
+->getList() 작성-- 세션은 서블릿에서 직접 생성해야함
+
+6.jsp에서 확인
+-> 화면 하단에 리스트 출력
+  - 리스트는 세션의 변수를 읽어 출력
+  - 리스트가 널일 경우 출력하지 않음
+
+7.서블릿에서 입력한값을 db에 등록하는 메소드 작성
+->addList()
+
+Servlet
+ - doGet : 최초진입(+조회) -> jsp 호출
+ - doPost : db에 데이터 저장(jsp에서는 수정) -> jsp호출 //jsp가 두개밖에 지원안함
+ - doPut : 원래있던 데이터 수정
+ - doDelete : 데이터 삭제

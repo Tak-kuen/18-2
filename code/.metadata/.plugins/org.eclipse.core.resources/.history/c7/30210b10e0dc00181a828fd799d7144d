@@ -1,0 +1,30 @@
+/**
+ * 
+ */
+
+var status = true;
+
+$(document).ready(function() {
+	$("#modify").click(function() {
+		if($("#id").val()) {
+			var query={passwd:$("#passwd").val()};
+			
+			$.ajax({
+				type:"post",
+				url:"memberCheck.jsp",
+				data:query,
+				success:function(data) {
+					if(data==1) {
+						alert("사용할 수 없는 아이디");
+						$("#id").val("");
+					}else if(data==-1){
+						alert("사용할 수 있는 아이디");
+					}
+				}//success
+			});//ajax
+		} else{
+			alert("사용할 아이디를 입력");
+			$("#id").focus();
+		}//if-else
+	});//checkId
+});

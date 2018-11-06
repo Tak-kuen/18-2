@@ -1,0 +1,8 @@
+package _20181105입출력;
+
+public class ScanTest {
+	public static void main(String[] args) {
+		MyScanner myScanner = new MyScanner();
+		myScanner.print();
+	}
+}

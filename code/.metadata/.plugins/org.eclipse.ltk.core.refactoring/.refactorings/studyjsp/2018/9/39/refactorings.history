@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;studyjsp/WebContent/Jsp수업/usePool.jsp&apos; to &apos;365_usePool.jsp&apos;" description="Rename resource &apos;usePool.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/Jsp수업/usePool.jsp" name="365_usePool.jsp" stamp="1538010033200" updateReferences="true"/>
+</session>

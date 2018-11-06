@@ -1,0 +1,34 @@
+package ch11.logon;
+
+import java.sql.*;
+
+import javax.sql.*;
+import javax.naming.*;
+
+public class LogonDBBean {
+	
+	//教臂沛 DB后 积己
+	private static LogonDBBean instance = new LogonDBBean();
+	public static LogonDBBean getInstance() {return instance;}
+	private LogonDBBean() {}
+	
+	//目池记钱俊辑 目池记 按眉甫 掘绢郴绰 皋家靛
+	private Connection getConnection() throws Exception{
+		Context initCtx = new InitialContext();
+		Context envCtx = (Context)initCtx.lookup("java:com/env");
+		DataSource ds = (DataSource)envCtx.lookup("jdbc/test");
+		return ds.getConnection();
+	}
+	
+	//雀盔啊涝 贸府
+	public void insertMember(LogonDataBean member) {
+		Connection conn=null;
+		PreparedStatement pstmt=null;	
+	}
+	
+	public int userCheck(String id, String passwd) {	
+	}
+	
+	
+	
+}

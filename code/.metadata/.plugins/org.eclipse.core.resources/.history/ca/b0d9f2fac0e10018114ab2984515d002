@@ -1,0 +1,10 @@
+1.ProductSearchServlet 서블릿 생성
+2.productSearch.jsp파일 생성(검색어 입력 ui)
+
+method="post" action="ProductSearchServlet"
+
+3.ProductSearchServlet
+ - doGet() : productSearch.jsp로 포워드
+ - doPost() : request.getParameter로 키워드 받은 다음
+ DB에서 검색하고 결과를 session에 "productList"에 저장한 다음
+ product.jsp로 포워드
