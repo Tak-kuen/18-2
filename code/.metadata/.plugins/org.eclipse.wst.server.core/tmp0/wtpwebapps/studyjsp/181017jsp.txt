@@ -1,10 +1,10 @@
-1.ProductSearchServlet ¼­ºí¸´ »ı¼º
-2.productSearch.jspÆÄÀÏ »ı¼º(°Ë»ö¾î ÀÔ·Â ui)
+ï»¿1.ProductSearchServlet ì„œë¸”ë¦¿ ìƒì„±
+2.productSearch.jspíŒŒì¼ ìƒì„±(ê²€ìƒ‰ì–´ ì…ë ¥ ui)
 
 method="post" action="ProductSearchServlet"
 
 3.ProductSearchServlet
- - doGet() : productSearch.jsp·Î Æ÷¿öµå
- - doPost() : request.getParameter·Î Å°¿öµå ¹ŞÀº ´ÙÀ½
- DB¿¡¼­ °Ë»öÇÏ°í °á°ú¸¦ session¿¡ "productList"¿¡ ÀúÀåÇÑ ´ÙÀ½
- product.jsp·Î Æ÷¿öµå
+ - doGet() : productSearch.jspë¡œ í¬ì›Œë“œ
+ - doPost() : request.getParameterë¡œ í‚¤ì›Œë“œ ë°›ì€ ë‹¤ìŒ
+ DBì—ì„œ ê²€ìƒ‰í•˜ê³  ê²°ê³¼ë¥¼ sessionì— "productList"ì— ì €ì¥í•œ ë‹¤ìŒ
+ product.jspë¡œ í¬ì›Œë“œ

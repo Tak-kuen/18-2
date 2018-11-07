@@ -1,22 +1,30 @@
-product Å×ÀÌºí »ı¼º
+ï»¿product í…Œì´ë¸” ìƒì„±
 int id - pk, String name - not null, String info, int price - not null
 
-µ¥ÀÌÅÍ 5°³ ÀÌ»ó »ğÀÔ
+ë°ì´í„° 5ê°œ ì´ìƒ ì‚½ì…
 
-db³»¿ë ´ãÀ» ÀÚ¹Ù ºó »ı¼º
+dbë‚´ìš© ë‹´ì„ ìë°” ë¹ˆ ìƒì„±
 
-¼­ºí¸´ »ı¼º- »ı¼º½Ã url mapping¿¡¼­ ¼Ò¹®ÀÚ·Î º¯°æ
-doGet ÇÔ¼ö º¯°æ
-request.getRequestDispatcher("°æ·Î").forward(request,response);
+ì„œë¸”ë¦¿ ìƒì„±- ìƒì„±ì‹œ url mappingì—ì„œ ì†Œë¬¸ìë¡œ ë³€ê²½
+doGet í•¨ìˆ˜ ë³€ê²½
+request.getRequestDispatcher("ê²½ë¡œ").forward(request,response);
 
-private ArrayList<Product> getList()»ı¼º(¼­ºí¸´Àº ÀÌ ÇÔ¼ö¸¦ µû·ÎÅ¬·¡½º·Î ¸¸µé¾î »ç¿ëÇÏ¸é °£´ÜÇØÁü)
-doGetÇÔ¼ö º¯°æ
-¼¼¼Ç »ı¼ºÈÄ getList°á°ú¸¦ ¼¼¼Ç¿¡ ÀúÀå
+private ArrayList<Product> getList()ìƒì„±(ì„œë¸”ë¦¿ì€ ì´ í•¨ìˆ˜ë¥¼ ë”°ë¡œí´ë˜ìŠ¤ë¡œ ë§Œë“¤ì–´ ì‚¬ìš©í•˜ë©´ ê°„ë‹¨í•´ì§)
+doGetí•¨ìˆ˜ ë³€ê²½
+ì„¸ì…˜ ìƒì„±í›„ getListê²°ê³¼ë¥¼ ì„¸ì…˜ì— ì €ì¥
 
-jsp¿¡¼­ ¼¼¼ÇÀÇ ³»¿ëÀÌ Àß ÀúÀåµÇ¾ú´ÂÁö È®ÀÎ
--> jsp¿Í htmlÅÂ±×°¡ È¥ÀçÇÑ ½ºÆÄ°ÔÆ¼ ÄÚµå°¡ µÊ
-=> JSTL(JSP Standard Tag Library)·Î ÇØ°á(jsp´Â ±ò²ûÇØÁü)
+jspì—ì„œ ì„¸ì…˜ì˜ ë‚´ìš©ì´ ì˜ ì €ì¥ë˜ì—ˆëŠ”ì§€ í™•ì¸
+-> jspì™€ htmlíƒœê·¸ê°€ í˜¼ì¬í•œ ìŠ¤íŒŒê²Œí‹° ì½”ë“œê°€ ë¨
+=> JSTL(JSP Standard Tag Library)ë¡œ í•´ê²°(jspëŠ” ê¹”ë”í•´ì§)
 
-*JSTL ¼³Ä¡¹ı
+*JSTL ì„¤ì¹˜ë²•
 https://tomcat.apache.org/taglibs/standard/
-ÃÖ½Å¹öÀü ´Ù¿î·Îµå-jarÆÄÀÏµé ´Ù¿î·Îµå-³» ÇÁ·ÎÁ§Æ®ÀÇ WebContent/WEB-INF/libÆú´õ¿¡ º¹»ç
+ìµœì‹ ë²„ì „ ë‹¤ìš´ë¡œë“œ-jaríŒŒì¼ë“¤ ë‹¤ìš´ë¡œë“œ-ë‚´ í”„ë¡œì íŠ¸ì˜ WebContent/WEB-INF/libí´ë”ì— ë³µì‚¬
+
+<c:if test="${productList != null}">
+	<c:forEach var="p" items="${productList}">
+		ê²€ìƒ‰ì–´&nbsp;:&nbsp;${p.name}<br/>
+		ê²°ê³¼<br/>
+		${p.id }&nbsp;:&nbsp;${p.name}&nbsp; ${p.info}&nbsp; ${p.price}<br/>
+	</c:forEach>
+</c:if>

@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="com.oreilly.servlet.MultipartRequest" %>
+<%@ page import="com.oreilly.servlet.multipart.DefaultFileRenamePolicy" %>
+<%@ page import="java.util.*" %>
+<%@ page import="java.io.*" %>
+
+<% request.setCharacterEncoding("utf-8"); %>
+
+<%
+	String result="-------------------<br>";
+	String realFolder ="";
+	String saveFolder ="/saveFile";
+	String enctype="utf-8";
+	int maxSize = 5*1024*1024;
+	
+	ServletContext context = getServletContext();
+	realFolder = context.getRealPath(saveFolder);
+	
+	try{
+		MultipartRequest upload =null;
+		
+		upload = new MultipartRequest(request, realFolder, maxSize, encTypem, new DefaultFileRenamePolicy());
+		
+		Enumeration<?> params = upload.getParameterNames();
+		
+		while(params.hasMoreElements()) {
+			String name=(String)params.nextElement();
+			String value=upload.getParameter(name);
+			result += name + " : " + value + "<br>";
+		}
+		Enumeration<?> files = upload.getFileNames();
+		
+		while(files.hasMoreElements()) {
+			String name=(String)files.nextElement();
+			String filename = upload.getFilesystemName(name);
+			String original = upload.getOriginalFileName(name);
+		}
+	}
+%>

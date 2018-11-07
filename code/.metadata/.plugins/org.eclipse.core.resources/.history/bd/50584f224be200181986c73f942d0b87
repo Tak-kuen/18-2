@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="singleUpload.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+<form id="upForm1" action="singleUploadPro.jsp" method="post"
+enctype="multipart/form-data">
+	<div id="form">
+		<ul>
+			<li>
+			제목<input type="text" id="title" name="title" size="20"
+			autofocus>
+			<li>
+			파일선택<input type="file" id="file1" name="file1">
+			<li><input type="submit" id="upPro1" value="단일 파일 업로드">
+		</ul>
+	</div>
+</form>
+<div id="upResult"></div>
+</body>
+</html>

@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <script src="../js/jquery-3.3.1.min.js"></script>
+
 <script src="login.js"></script>
 <meta charset="UTF-8">
 <c:if test="${empty id}">
