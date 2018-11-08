@@ -50,3 +50,6 @@
 0:0:0:0:0:0:0:1 - - [07/Nov/2018:21:12:47 +0900] "GET /favicon.ico HTTP/1.1" 404 1085
 0:0:0:0:0:0:0:1 - - [07/Nov/2018:21:12:55 +0900] "POST /studyjsp/ch13/multiUploadPro.jsp HTTP/1.1" 200 12
 0:0:0:0:0:0:0:1 - - [07/Nov/2018:21:12:56 +0900] "GET /studyjsp/ch13/multiUploadForm.jsp HTTP/1.1" 200 727
+0:0:0:0:0:0:0:1 - - [07/Nov/2018:21:18:13 +0900] "GET /studyjsp/ch13/multiUploadForm.jsp HTTP/1.1" 200 727
+0:0:0:0:0:0:0:1 - - [07/Nov/2018:21:18:13 +0900] "GET /studyjsp/ch13/multiUpload.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [07/Nov/2018:21:18:19 +0900] "POST /studyjsp/ch13/multiUploadPro.jsp HTTP/1.1" 200 12

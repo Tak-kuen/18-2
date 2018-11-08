@@ -1,0 +1,5 @@
+package ch17.controller;
+
+public interface CommandProcess {
+
+}
