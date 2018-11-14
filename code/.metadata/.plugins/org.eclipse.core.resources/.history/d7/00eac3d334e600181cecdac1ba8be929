@@ -1,0 +1,24 @@
+package _20181112URL;
+
+import java.io.*;
+import java.net.*;
+
+public class WDB {
+	public static void main(String[] args) {
+		URL naver=null;
+		URLConnection naverC=null;
+		
+		try {
+			naver = new URL("https://www.naver.com");
+			naverC = naver.openConnection();
+			
+			InputStream is = naverC.getInputStream();
+			InputStreamReader isr = new InputStreamReader(is);
+				
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import = "ch11.logon.LogonDBBean,java.sql.*,javax.sql.*,javax.naming.*" %>
+<% request.setCharacterEncoding("utf-8"); %>
+<%
+	String id=request.getParameter("id");
+	String passwd=request.getParameter("passwd");
+	
+	LogonDBBean manager = LogonDBBean.getInstance();
+	int check = manager.userCheck(id, passwd);
+	
+	if(check==1)
+		session.setAttribute("id",id);
+	
+	out.println(check);
+	
+	Context initCtx = new InitialContext();
+	Context envCtx = (Context)initCtx.lookup("java:comp/env");
+	DataSource ds = (DataSource)envCtx.lookup("jdbc/test");
+	
+	Connection conn=null;
+	PreparedStatement pstmt=null;
+	ResultSet rs=null;
+	
+	conn=ds.getConnection();
+	pstmt=conn.prepareStatement("select * from member where mid=?");
+	pstmt.setString(1, id);
+	rs=pstmt.executeQuery();
+%>

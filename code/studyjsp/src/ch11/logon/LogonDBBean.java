@@ -7,12 +7,12 @@ import javax.naming.*;
 
 public class LogonDBBean {
 	
-	//½Ì±ÛÅæ DBºó »ı¼º
-	private static LogonDBBean instance = new LogonDBBean();//¹«Á¶°Ç ÇÑ¹øÀº »ı¼ºµÇ´Â °´Ã¼
+	//ì‹±ê¸€í†¤ DBë¹ˆ ìƒì„±
+	private static LogonDBBean instance = new LogonDBBean();//ë¬´ì¡°ê±´ í•œë²ˆì€ ìƒì„±ë˜ëŠ” ê°ì²´
 	public static LogonDBBean getInstance() {	return instance;}//
-	private LogonDBBean() {}//¾øÀ¸¸é getInstance()¿Í new·Î »ı¼º µÑ´Ù °¡´ÉÇØÁü
+	private LogonDBBean() {}//ì—†ìœ¼ë©´ getInstance()ì™€ newë¡œ ìƒì„± ë‘˜ë‹¤ ê°€ëŠ¥í•´ì§
 	
-	//Ä¿³Ø¼ÇÇ®¿¡¼­ Ä¿³Ø¼Ç °´Ã¼¸¦ ¾ò¾î³»´Â ¸Ş¼Òµå
+	//ì»¤ë„¥ì…˜í’€ì—ì„œ ì»¤ë„¥ì…˜ ê°ì²´ë¥¼ ì–»ì–´ë‚´ëŠ” ë©”ì†Œë“œ
 	private Connection getConnection() throws Exception{
 		Context initCtx = new InitialContext();
 		Context envCtx = (Context)initCtx.lookup("java:comp/env");
@@ -21,7 +21,7 @@ public class LogonDBBean {
 		return ds.getConnection();
 	}
 	
-	//È¸¿ø°¡ÀÔ Ã³¸®
+	//íšŒì›ê°€ì… ì²˜ë¦¬
 	public void insertMember(LogonDataBean member) {
 		Connection conn=null;
 		PreparedStatement pstmt=null;
@@ -63,12 +63,12 @@ public class LogonDBBean {
 				if(dbpasswd.equals(passwd)) {
 					result=1;
 				}else
-					result=0;//ºñ¹Ğ¹øÈ£ ¿À·ù
-			//¾ÆÀÌµğ°¡ Á¸ÀçÇÒ°æ¿ì
+					result=0;//ë¹„ë°€ë²ˆí˜¸ ì˜¤ë¥˜
+			//ì•„ì´ë””ê°€ ì¡´ì¬í• ê²½ìš°
 				
 			}else
 				result=-1;
-			//¾ÆÀÌµğ°¡ ¾øÀ»°æ¿ì
+			//ì•„ì´ë””ê°€ ì—†ì„ê²½ìš°
 		} catch (Exception ex) {
 			ex.printStackTrace();	
 		} finally {
@@ -93,9 +93,9 @@ public class LogonDBBean {
 			rs=pstmt.executeQuery();
 			
 			if(rs.next()) {
-				result=1;	//Áßº¹¾ÆÀÌµğ ÀÖÀ½
+				result=1;	//ì¤‘ë³µì•„ì´ë””
 			}else {
-				result=-1;	//Áßº¹¾ÆÀÌµğ ¾øÀ½
+				result=-1;	//ì¤‘ë³µ ì•„ë‹˜
 			}
 		} catch (Exception ex) {
 			ex.printStackTrace();	
@@ -130,7 +130,7 @@ public class LogonDBBean {
 					member.setReg_date(rs.getTimestamp("reg_date"));
 					member.setAddress(rs.getString("address"));
 					member.setTel(rs.getString("tel"));
-				}//Á¶È¸µÈ µ¥ÀÌÅÍ¸¦ µ¥ÀÌÅÍºó¿¡ ÀúÀå
+				}//ì¡°íšŒëœ ë°ì´í„°ë¥¼ ë°ì´í„°ë¹ˆì— ì €ì¥
 			}
 		} catch (Exception ex) {
 			ex.printStackTrace();	
@@ -140,7 +140,7 @@ public class LogonDBBean {
 			if(conn!=null) try { conn.close();} catch(SQLException ex) {}
 		}//try-catch
 		
-		return member;//ÀúÀåµÈ µ¥ÀÌÅÍ ºóÀ» ¸®ÅÏ
+		return member;//ì €ì¥ëœ ë°ì´í„° ë¹ˆì„ ë¦¬í„´
 	}//getMember();
 	
 	public int updateMember(LogonDataBean member) {
@@ -165,8 +165,8 @@ public class LogonDBBean {
 					pstmt.setString(3, member.getTel());
 					pstmt.setString(4, member.getId());
 					pstmt.executeUpdate();
-					result=1;		//Á¤º¸¼öÁ¤ ¼º°ø
-				}else	result=0;	//Á¤º¸¼öÁ¤ ½ÇÆĞ
+					result=1;		//ì •ë³´ìˆ˜ì • ì„±ê³µ
+				}else	result=0;	//ì •ë³´ìˆ˜ì • ì‹¤íŒ¨
 			}// rs.next
 		} catch (Exception ex) {
 			ex.printStackTrace();	
@@ -198,8 +198,8 @@ public class LogonDBBean {
 					pstmt=conn.prepareStatement("delete from members where id=?");
 					pstmt.setString(1,id);
 					pstmt.executeUpdate();
-					result=1;		//Å»Åğ ¼º°ø
-				}else	result=0;	//Å»Åğ ½ÇÆĞ
+					result=1;		//íƒˆí‡´ ì„±ê³µ
+				}else	result=0;	//íƒˆí‡´ ì‹¤íŒ¨
 			}//rs.next
 		} catch (Exception ex) {
 			ex.printStackTrace();	

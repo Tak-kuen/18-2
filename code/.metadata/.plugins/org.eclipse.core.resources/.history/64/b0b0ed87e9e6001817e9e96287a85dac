@@ -1,0 +1,19 @@
+//1501163 송탁근
+
+package _1113Queue;
+
+interface LQueue {
+	boolean isEmpty();
+	void enQueue(char item);
+	char deQueue();
+	void delete();
+	char peek();
+}
+
+class QNode {
+	char data;
+	QNode link;
+}
+public class Ex8_3 {
+
+}

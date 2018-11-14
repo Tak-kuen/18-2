@@ -1,0 +1,12 @@
+/**
+ * 로그인 처리
+ */
+$(document).ready(function() {
+	$("#BeforeLogin").show();
+	$("#Login").hide();
+	$("#LoginResult").hide();
+});
+
+
+var jArray=[];
+var jobj={};

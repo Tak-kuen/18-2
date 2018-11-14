@@ -1,0 +1,24 @@
+package _20181112네트워크;
+
+import java.io.*;
+import java.net.*;
+
+public class ClientSocketTest {
+	public static void main(String[] args) {
+		//	클라이언트 생성
+		
+		Socket socket = null;
+		try {
+		//	1.소켓으로 서버에 접속
+			socket=new Socket("39.127.8.197",5555);
+			PrintWriter out = new PrintWriter(socket.getOutputStream(),true);
+		//	2.이름을 데이터로 보내고 접속을 종료한다.
+			out.println("LostArk gogo");
+			out.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+}

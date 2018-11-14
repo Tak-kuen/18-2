@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="2018-02학기 Web2.0과제(aJax 뷰만들기)_1501163_송탁근">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes/" source-path="/ImportedClasses"/>
+        <dependent-module archiveName="mariadb-java-client-2.3.0.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/mariadb-java-client-2.3.0/mariadb-java-client-2.3.0">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="java-json.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/java-json/java-json">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="2018-02학기_Web2.0과제(aJax_뷰만들기)_1501163_송탁근"/>
+        <property name="java-output-path" value="/2018-02학기 Web2.0과제(aJax 뷰만들기)_1501163_송탁근/build/classes"/>
+    </wb-module>
+</project-modules>

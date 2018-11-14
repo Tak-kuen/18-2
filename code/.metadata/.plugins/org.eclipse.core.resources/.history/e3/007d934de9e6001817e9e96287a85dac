@@ -1,0 +1,13 @@
+package _1113Queue;
+
+interface LQueue {
+	boolean isEmpty();
+	void enQueue(char item);
+	char deQueue();
+	void delete();
+	char peek();
+}
+
+public class Ex8_3 {
+
+}

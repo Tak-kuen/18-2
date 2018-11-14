@@ -1,0 +1,7 @@
+package _20181108입출력;
+
+public class WDB {
+	public static void main(String[] args) {
+		String name="c:\\windows";
+	}
+}

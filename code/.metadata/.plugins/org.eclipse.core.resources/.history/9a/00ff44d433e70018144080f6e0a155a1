@@ -1,0 +1,29 @@
+/**
+ * 로그인 처리
+ */
+$(document).ready(function() {
+	$("#BeforeLogin").show();
+	$("#Login").hide();
+	$("#LoginResult").hide();
+	
+	$("#ToLogin").click(function() {
+		$("#BeforeLogin").toggle();
+		$("#Login").toggle(function() {
+			var query={ id: $("#loginTxtID").val(), passwd:$("#loginTxtPw").val()};
+			
+			$.ajax({
+				type:"post",
+				url:"loginPro.jsp",
+				data:query,
+				success:function(data) {
+					$("#LoginResult").toggle();
+					$("#LoginName").text();
+				}//success
+			});//ajax
+		});//login toggle
+	});//tologin
+});//document
+
+
+var jArray=[];
+var jobj={};

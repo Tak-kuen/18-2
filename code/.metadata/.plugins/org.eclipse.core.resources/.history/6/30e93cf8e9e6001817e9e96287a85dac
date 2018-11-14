@@ -1,0 +1,62 @@
+//1501163 송탁근
+
+package _1113Queue;
+
+interface LQueue {
+	boolean isEmpty();
+	void enQueue(char item);
+	char deQueue();
+	void delete();
+	char peek();
+}
+
+class QNode {
+	char data;
+	QNode link;
+}
+
+class LinkedQueue implements LQueue {
+	
+	QNode front;
+	QNode rear;
+	
+	public LinkedQueue () {
+		front=null; rear=null;
+	}
+	
+	public boolean isEmpty() {	return (front==null);}
+
+	public void enQueue(char item) {
+		QNode newNode = new QNode();
+		newNode.data=item;
+		newNode.link=null;
+		if(isEmpty()) {
+			front=newNode; rear=newNode;
+		}else {
+			rear.link=newNode; rear=newNode;
+		}
+		System.out.println("Inserted Item : " + item);
+	}
+
+	@Override
+	public char deQueue() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void delete() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public char peek() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+}
+public class Ex8_3 {
+
+}

@@ -1,0 +1,10 @@
+package _20181108입출력;
+
+import java.io.*;
+
+public class WDB {
+	public static void main(String[] args) {
+		String name="c:\\windows";
+		File file = new File(name);
+	}
+}

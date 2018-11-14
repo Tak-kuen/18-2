@@ -1,0 +1,34 @@
+/**
+ * 로그인 처리
+ */
+$(document).ready(function() {
+	$("#BeforeLogin").show();
+	$("#Login").hide();
+	$("#LoginResult").hide();
+	
+	$("#ToLogin").click(function() {
+		$("#BeforeLogin").toggle();
+		$("#Login").toggle(function() {
+			var query={ id: $("#loginTxtID").val(), passwd:$("#loginTxtPw").val()};
+			
+			$.ajax({
+				type:"post",
+				url:"loginPro.jsp",
+				data:query,
+				success:function(data) {
+					if(data==1) {
+						$("#main_auth").load("modifyForm.jsp?passwd=" + $("#passwd").val());
+					}else {
+						alert("비밀번호가 틀립니다.");
+						$("#passwd").val("");
+						$("#passwd").focus();
+					}//if-else
+				}//success
+			});//ajax
+		});//login toggle
+	});//tologin
+});//document
+
+
+var jArray=[];
+var jobj={};

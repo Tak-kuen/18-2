@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item value="false" key="J2EE_EXPORT_OVERWRITE"/>
+	<item value="false" key="J2EE_EXPORT_SOURCE"/>
+	<list key="J2EE_IMPORT_null">
+		<item value="C:\Users\bon320-9\Desktop\2018-02학기 Web2.0과제(aJax 뷰만들기)_1501163_송탁근.war"/>
+	</list>
 	<list key="MRU_RUNTIME_STORE">
 		<item value="Apache Tomcat v9.0"/>
+	</list>
+	<list key="J2EE_EXPORT_JST_WEB">
+		<item value="C:\Users\bon320-9\Desktop\2018-02학기 Web2.0과제(aJax 뷰만들기)_1501163_송탁근.war"/>
 	</list>
 </section>

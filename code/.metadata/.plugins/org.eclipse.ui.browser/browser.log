@@ -475,3 +475,17 @@
 
 11월 07, 2018 14:26:37.33 NEW SESSION
 11월 07, 2018 14:26:37.33 [228:7464:1107/142637.324:ERROR:audio_manager_base.cc(362)] Invalid audio output parameters received; using fake audio path: format: 0 channel_layout: 0 channels: 0 sample_rate: 0 frames_per_buffer: 0 effects: 0 mic_positions: 
+
+11월 13, 2018 20:54:52.32 NEW SESSION
+11월 13, 2018 20:54:52.32 [13240:13816:1113/205452.315:ERROR:extension_protocols.cc(565)] Allowing load of chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/include.preload.js.mapfrom unknown origin. Could not find user data for request.
+11월 13, 2018 20:54:52.32 [13240:13816:1113/205452.316:ERROR:extension_protocols.cc(565)] Allowing load of chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/include.postload.js.mapfrom unknown origin. Could not find user data for request.
+11월 13, 2018 20:55:05.36 [13240:13816:1113/205505.365:ERROR:extension_protocols.cc(565)] Allowing load of chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/include.preload.js.mapfrom unknown origin. Could not find user data for request.
+11월 13, 2018 20:55:05.40 [13240:13816:1113/205505.405:ERROR:extension_protocols.cc(565)] Allowing load of chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/include.postload.js.mapfrom unknown origin. Could not find user data for request.
+11월 13, 2018 20:55:44.70 [13240:13816:1113/205544.707:ERROR:extension_protocols.cc(565)] Allowing load of chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/include.preload.js.mapfrom unknown origin. Could not find user data for request.
+11월 13, 2018 20:55:44.74 [13240:13816:1113/205544.742:ERROR:extension_protocols.cc(565)] Allowing load of chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/include.postload.js.mapfrom unknown origin. Could not find user data for request.
+11월 13, 2018 20:57:49.68 [13240:13816:1113/205749.686:ERROR:extension_protocols.cc(565)] Allowing load of chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/include.preload.js.mapfrom unknown origin. Could not find user data for request.
+11월 13, 2018 20:57:49.72 [13240:13816:1113/205749.720:ERROR:extension_protocols.cc(565)] Allowing load of chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/include.postload.js.mapfrom unknown origin. Could not find user data for request.
+
+11월 14, 2018 14:03:06.52 NEW SESSION
+11월 14, 2018 14:03:06.52 [1296:10492:1114/140306.510:ERROR:extension_protocols.cc(565)] Allowing load of chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/include.preload.js.mapfrom unknown origin. Could not find user data for request.
+11월 14, 2018 14:03:06.52 [1296:10492:1114/140306.510:ERROR:extension_protocols.cc(565)] Allowing load of chrome-extension://gighmmpiobklfepjocnamgkkbiglidom/include.postload.js.mapfrom unknown origin. Could not find user data for request.

@@ -38,7 +38,7 @@ public class TodoServlet extends HttpServlet {
 		HttpSession session= request.getSession();
 		session.setAttribute("todoList", getList());
 		request.getRequestDispatcher("Jsp/372_todo.jsp").forward(request,response);
-		//¼¼¼ÇÀ» µû·Î ¼³Á¤ÇØÁà¾ß ÇÑ´Ù.
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ´ï¿½.
 		//
 	}
 
@@ -74,7 +74,7 @@ public class TodoServlet extends HttpServlet {
 			
 			while(rs.next()) {
 				TodoBean bean=new TodoBean();
-				bean.setId(rs.getInt("_id"));
+				bean.setId(rs.getInt("id"));
 				bean.setDetail(rs.getString("detail"));
 				bean.setDone(rs.getBoolean("done"));
 				list.add(bean);

@@ -1,0 +1,21 @@
+package _20181112네트워크;
+
+import java.io.*;
+import java.net.*;
+
+public class ClientSocketTest {
+	public static void main(String[] args) {
+		//	클라이언트 생성
+		//	1.소켓으로 서버에 접속
+		Socket socket = null;
+		try {
+			socket=new Socket("39.127.8.189",5555);
+			PrintWriter out = new PrintWriter(socket.getOutputStream(),true);
+			out.println("홍길동");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		//	2.이름을 데이터로 보내고 접속을 종료한다.
+	}
+}
