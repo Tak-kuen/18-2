@@ -1,0 +1,20 @@
+package bookshop.bean;
+
+import java.sql.*;
+import javax.naming.*;
+
+import org.apache.tomcat.jdbc.pool.DataSource;
+
+public class MngrDBBean {
+	//싱글톤 DBBean 생성
+	private static MngrDBBean instance = new MngrDBBean();
+	public static MngrDBBean getInstance()	{return instance;}
+	private MngrDBBean() {}
+	
+	private Connection getConnection() throws Exception {
+		Context initCtx = new InitialContext();
+		Context envCtx = (Context)initCtx.lookup("java:com/env");
+		DataSource ds = (DataSource)envCtx.lookup("jdbc/test");
+		return ds.getConnection();
+	}
+}

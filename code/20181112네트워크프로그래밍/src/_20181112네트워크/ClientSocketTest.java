@@ -7,12 +7,15 @@ import java.util.*;
 public class ClientSocketTest {
 	public static void main(String[] args) {
 		//	클라이언트 생성
-		
+		DataInputStream in=null;
 		Socket socket = null;
+		int data;
+		
 		try {
 		//	1.소켓으로 서버에 접속
-			socket=new Socket("39.127.8.189",5555);
+			socket=new Socket("39.127.8.230",5555);
 			PrintWriter out = new PrintWriter(socket.getOutputStream(),true);
+			in=new DataInputStream(socket.getInputStream());
 		//	2.이름을 데이터로 보내고 접속을 종료한다.
 		//		9를 입력할때까지 계속 데이터로 보내고
 		//		9를 입력하면 접속을 종료
@@ -21,6 +24,8 @@ public class ClientSocketTest {
 			do {
 				input=scan.nextLine();
 				out.println(input);
+				data=in.readInt();
+				System.out.println(data);
 			}while(!input.equals("9"));
 			out.close();
 		} catch (IOException e) {

@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+
+var status=true;
+
+$(document).ready(function() {
+	$("#registProduct").click(function() {
+		location.href="/shoppingmall/mg/bookRegisterForm.do";
+	});
+	$("#updateProduct").click(function() {
+		location.href="/shoppingmall/mg/booklist.do?book_kind=all";
+	});
+});

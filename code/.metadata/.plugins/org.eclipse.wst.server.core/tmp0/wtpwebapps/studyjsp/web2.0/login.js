@@ -7,8 +7,8 @@ $(document).ready(function() {
 	$("#LoginResult").hide();
 	
 	$("#ToLogin").click(function() {
-		$("#BeforeLogin").toggle();
-		$("#Login").toggle();//ajax
+		$("#BeforeLogin").toggle();//hidden
+		$("#Login").toggle();//show
 		$("#loginBtnLogin").click(function() {
 			var query={ id: $("#loginTxtID").val(), passwd:$("#loginTxtPw").val()};
 			$.ajax({

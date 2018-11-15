@@ -1,0 +1,5 @@
+#command=class full name
+##admin area-main&authorization
+/mg/managerMain.do=bookshop.command.ManagerMainAction
+/mg/managerLoginForm.do=bookshop.command.ManagerLoginFormAction
+/mg/managerLoginPro.do=bookshop.command.ManagerLoginProAction

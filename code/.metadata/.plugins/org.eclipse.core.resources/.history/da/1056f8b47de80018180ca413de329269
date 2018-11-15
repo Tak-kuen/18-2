@@ -1,0 +1,8 @@
+package bookshop.bean;
+
+public class MngrDBBean {
+	private static MngrDBBean instance = new MngrDBBean();
+	
+	public static MngrDBBean getInstance()	{return instance;}
+	private MngrDBBean() {}
+}

@@ -1,0 +1,37 @@
+package _20181112네트워크;
+
+import java.io.*;
+import java.net.*;
+import java.util.*;
+
+public class ClientSocketTest {
+	public static void main(String[] args) {
+		//	클라이언트 생성
+		BufferedReader in=null;
+		Socket socket = null;
+		int data;
+		
+		try {
+		//	1.소켓으로 서버에 접속
+			socket=new Socket("39.127.8.230",5555);
+			PrintWriter out = new PrintWriter(socket.getOutputStream(),true);
+			in=new BufferedReader(new InputStreamReader(socket.getInputStream()));
+		//	2.이름을 데이터로 보내고 접속을 종료한다.
+		//		9를 입력할때까지 계속 데이터로 보내고
+		//		9를 입력하면 접속을 종료
+			Scanner scan = new Scanner(System.in);
+			String input = null;
+			do {
+				input=scan.nextLine();
+				out.println(input);
+				data=in.readLine();
+				System.out.println(data);
+			}while(!input.equals("9"));
+			out.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+}

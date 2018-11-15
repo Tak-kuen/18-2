@@ -11,13 +11,16 @@ class MyThread extends Thread {
 	
 	public void run() {
 		String data;
-		BufferedReader in;
+		BufferedReader in=null;
+		PrintWriter out=null;
 		try {
 			in = new BufferedReader(
 					new InputStreamReader(
 							socket.getInputStream()));
+			out=new PrintWriter(socket.getOutputStream(),true);
+			//
 			while( ( data=in.readLine() ) != null) {
-				System.out.println(data+""+socket.getInetAddress());
+				System.out.println(data+""+socket.getInetAddress());				
 			}
 			socket.close();
 		} catch (IOException e) {

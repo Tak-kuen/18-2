@@ -1,0 +1,44 @@
+/**
+ * 로그인 처리
+ */
+$(document).ready(function() {
+	$("#BeforeLogin").show();
+	$("#Login").hide();
+	$("#LoginResult").hide();
+	
+	$("#ToLogin").click(function() {
+		$("#BeforeLogin").hide();//hidden
+		$("#Login").show();//show
+		$("#loginBtnLogin").click(function() {
+			var query={ id: $("#loginTxtID").val(), passwd:$("#loginTxtPw").val()};
+			$.ajax({
+				type:"post",
+				url:"loginPro.jsp",
+				data:query,
+				dataType:"json",
+				success:function(data) {
+					if(data==0) {
+						alert("비밀번호가 틀립니다.");
+						$("#loginTxtPw").val("");
+						$("#loginTxtPw").focus();
+						$("#LoginResult").html("");
+					}else if(data==-1) {
+						alert("아이디가 없습니다.");
+						$("#loginTxtID").val("");
+						$("#loginTxtPw").val("");
+						$("#loginTxtID").focus();
+						$("#LoginResult").html("");
+					}else {
+						var result=JSON.parse(JSON.stringify(data))
+						alert(result[0].mname + "환영");
+						$("#loginTxtID").val("");
+						$("#loginTxtPw").val("");
+						$("#LoginResult").show();
+						$("#LoginName").text(result[0].mname);
+						console.log(result[0]);
+					}
+				}//success
+			});//ajax
+		});//loginBtnLogin
+	});//tologin
+});//document
