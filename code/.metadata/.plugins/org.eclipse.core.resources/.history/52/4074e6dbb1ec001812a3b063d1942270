@@ -1,0 +1,65 @@
+package Game;
+
+import javax.swing.*;
+
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.Toolkit;
+import java.awt.event.*;
+import java.sql.*;
+
+public class HighScore extends JFrame{
+	JFrame HighScore = new JFrame();
+	JPanel score;
+	JLabel scorenum;
+	
+	Connection conn;
+	Statement stmt;
+	ResultSet rs;
+	
+	HighScore() {
+		score = new JPanel();
+		scorenum = new JLabel("");
+		scorenum.setFont(new Font("Malgun Gothic", Font.BOLD, 50));
+		score.add(scorenum);
+		
+		this.add(score);
+		this.setTitle("HighScore");
+		this.setSize(400,100);
+		this.setVisible(true);
+		
+		
+		Dimension screen = Toolkit.getDefaultToolkit().getScreenSize();
+		int x = (int) (screen.getWidth() / 2 - getWidth() / 2);
+		int y = (int) (screen.getHeight() / 2 - getHeight() / 2);
+		setLocation(x, y);
+		this.setResizable(false);
+		this.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				HighScore.setVisible(false);
+				HighScore.dispose();
+			}
+		});
+	}
+	
+	public void connectDB() {
+		//1. JDBC드라이버 적재
+				try {
+					Class.forName("oracle.jdbc.driver.OracleDriver");
+				} catch(ClassNotFoundException e) {
+					e.printStackTrace();
+					return;
+				}	
+		//2. 데이터베이스 연결
+				String url = "jdbc:oracle:thin:@net.yjc.ac.kr:1521:orcl";
+				String id = "s1501163";
+				String pw = "p1501163";
+				try {
+					this.conn=DriverManager.getConnection(url, id, pw);
+					System.out.println("DB연결에 성공했습니다.");
+				} catch (SQLException e) {
+					System.out.println("DB연결에 실패했습니다.");
+					return;
+				}
+	}
+}

@@ -1,26 +1,28 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="org.json.*,java.sql.*,javax.sql.*,javax.naming.*"%>
+<%@ page import="org.json.*,java.sql.*,javax.sql.*"%>
 <%
 request.setCharacterEncoding("UTF-8");
 response.setCharacterEncoding("UTF-8");
 
-Context initCtx = new InitialContext();
-Context envCtx = (Context)initCtx.lookup("java:comp/env");
-DataSource ds = (DataSource)envCtx.lookup("jdbc/test");
-
 JSONObject jsonObject;
 JSONArray jsonArray = new JSONArray();
-Connection conn=null;
-PreparedStatement pstmt=null;
-ResultSet rs=null;
+
+Connection conn = null;
+ResultSet rs = null;
+PreparedStatement pstmt = null;	
 
 String id=request.getParameter("id");
 String passwd=request.getParameter("passwd");
 
 try {
-	conn=ds.getConnection();
+	String url="jdbc:mariadb://localhost:3306/test";
+	String dbid = "root";
+	String dbpw = "1234";
 	
+
+	Class.forName("org.mariadb.jdbc.Driver");
+	conn = DriverManager.getConnection(url, dbid, dbpw);
 	pstmt=conn.prepareStatement("select * from member where mid=?");
 	pstmt.setString(1, id);
 	rs=pstmt.executeQuery();

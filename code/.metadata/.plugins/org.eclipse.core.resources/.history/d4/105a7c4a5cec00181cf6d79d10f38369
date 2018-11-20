@@ -1,0 +1,51 @@
+//1501163 송탁근
+
+package _1120DQueue;
+
+class DQNode {
+	char data;
+	DQNode rlink;
+	DQNode llink;
+}
+
+class DQueue {
+	DQNode front;
+	DQNode rear;
+	
+	public DQueue() {	front=null;	rear=null;	}
+	public boolean isEmpty() {	return (front==null); }
+	public void insertFront(char item) {
+		DQNode newNode = new DQNode();
+		newNode.data=item;
+		if(isEmpty()) {
+			front=newNode;	rear=newNode;
+			newNode.rlink=null;
+			newNode.llink=null;
+		} else {
+			front.llink=newNode;
+			newNode.rlink=front;
+			newNode.llink=null;
+			front=newNode;
+		}
+		System.out.println("Front Inserted Item : " + item);
+	}
+	
+	public void insertRear(char item) {
+		DQNode newNode = new DQNode();
+		newNode.data=item;
+		if(isEmpty()) {
+			front=newNode;	rear=newNode;
+			newNode.rlink=null;
+			newNode.llink=null;
+		} else {
+			rear.rlink=newNode;
+			newNode.rlink=null;
+			newNode.llink=rear;
+			rear=newNode;
+		}
+		System.out.println("Front Inserted Item : " + item);
+	}
+}
+public class Ex8_4 {
+
+}
