@@ -1,0 +1,71 @@
+package Game;
+
+import javax.swing.*;
+import javax.swing.plaf.BorderUIResource;
+
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.Toolkit;
+import java.awt.event.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class LoginFrame extends JFrame implements ActionListener{
+	
+	PreparedStatement pstmt;
+	ResultSet rs;
+	Connection conn=null;
+	
+	JTextField idf;
+	JButton loginBtn;
+	
+	public LoginFrame() {
+		setSize(450,300);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setTitle("Login");
+		setLayout(null);
+		
+		JPanel mainPanel = new JPanel();
+		mainPanel.setLayout(new BorderLayout());
+		
+		JPanel imgPanel = new JPanel();
+		ImageIcon image = new ImageIcon("game.jpeg");
+		JLabel img = new JLabel(image);
+		imgPanel.add(img);
+		
+		JPanel loginPanel = new JPanel();
+		idf= new JTextField(10);
+		loginPanel.add(idf);
+		
+		loginBtn = new JButton("login");
+		loginBtn.addActionListener(this);
+		loginPanel.add(loginBtn);
+		
+		mainPanel.add(imgPanel,BorderLayout.CENTER);
+		mainPanel.add(loginPanel,BorderLayout.SOUTH);
+		this.add(mainPanel);
+		
+		Dimension screen = Toolkit.getDefaultToolkit().getScreenSize();
+		int xpos = (int) (screen.getWidth() / 2 - getWidth() / 2);
+		int ypos = (int) (screen.getHeight() / 2 - getHeight() / 2);
+		setLocation(xpos, ypos);
+		setVisible(true);
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		GameDBBean bean = GameDBBean.getInstance();
+		int result=bean.checkDB(idf.getText());
+		if(result==1) {
+			this.setVisible(false);
+			this.dispose();
+			new MainFrame();
+		}else if(result==0) {
+			this.idf.setText("");
+		}
+	}
+}

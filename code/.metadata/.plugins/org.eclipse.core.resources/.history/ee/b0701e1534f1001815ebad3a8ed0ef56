@@ -1,0 +1,59 @@
+package Game;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.sql.*;
+import javax.swing.*;
+
+public class LoginLabel extends JLabel {
+	JTextField idPanel;
+	JButton loginBtn;
+	Connection conn=null;
+	PreparedStatement pstmt;
+	ResultSet rs;
+	LoginLabel() {
+		boolean isLogin=false;
+		idPanel = new JTextField(10);
+		this.add(idPanel);
+		loginBtn = new JButton("로그인");
+		loginBtn.addActionListener(new BtnListener());
+		this.add(loginBtn);
+		setVisible(true);
+		
+	}
+	private class BtnListener implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			if(e.getSource()==loginBtn) {
+				checkDB(idPanel.getText());
+			}
+		}
+	}
+	public Connection connectDB() {
+		String url = "jdbc:oracle:thin:@net.yjc.ac.kr:1521:orcl";
+		String id = "s1501163";
+		String pw = "p1501163";
+		//1. JDBC드라이버 적재
+				try {
+					Class.forName("oracle.jdbc.driver.OracleDriver");
+					System.out.println("드라이버 적재 성공");
+					return DriverManager.getConnection(url, id, pw);
+				} catch(ClassNotFoundException | SQLException e) {
+					System.out.println("드라이버를 찾을 수 없습니다.");
+					try {
+						conn.close();
+					} catch (SQLException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+					return null;
+					
+				}	
+		//2. 데이터베이스 연결
+	}
+	public void checkDB() {
+		conn=connectDB();
+		
+	}
+}

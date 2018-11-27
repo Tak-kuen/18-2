@@ -1,0 +1,14 @@
+package Game;
+
+import javax.swing.*;
+
+public class LoginLabel extends JLabel {
+	LoginLabel() {
+		boolean isLogin=false;
+		JTextField idPanel = new JTextField(10);
+		this.add(idPanel);
+		JButton loginBtn = new JButton("로그인");
+		this.add(loginBtn);
+		setVisible(true);
+	}
+}

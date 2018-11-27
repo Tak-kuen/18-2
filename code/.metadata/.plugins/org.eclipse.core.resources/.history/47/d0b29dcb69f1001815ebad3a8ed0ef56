@@ -1,0 +1,8 @@
+package Game;
+
+public class GameDBBean {
+	private static GameDBBean instance = new GameDBBean();
+	public static GameDBBean getInstance() { return instance;}
+	private GameDBBean() {}
+	
+}

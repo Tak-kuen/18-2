@@ -26,14 +26,12 @@ class MyPanel extends JPanel implements ActionListener {	//1번과정
 			try {
 				img = ImageIO.read(new File("D:\\1501163\\code\\20180927그래픽프로그래밍\\src\\dd.jpg"));
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
 		
 		@Override
 		protected void paintComponent(Graphics g) {
-			// TODO Auto-generated method stub
 			super.paintComponent(g);
 			g.setColor(color);
 			g.fillRect(10, 10, 50, 50);
