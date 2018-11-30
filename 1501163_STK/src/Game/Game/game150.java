@@ -1,0 +1,9 @@
+package Game;
+
+public class game150 {
+	public static void main(String[] args) {
+		new LoginFrame();
+		
+//		new MainFrame();
+	}
+}
