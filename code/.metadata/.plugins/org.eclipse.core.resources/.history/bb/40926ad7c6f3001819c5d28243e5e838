@@ -1,0 +1,33 @@
+package Game;
+
+import java.awt.Font;
+import java.util.ArrayList;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class Rank extends JFrame{
+	JPanel score;
+	JLabel scorenum;
+	String userid;
+	ArrayList<ScoreBean> scoreList = new ArrayList<>();
+	boolean scored = false;
+	
+	public Rank(String id)  {
+		this.userid=id;
+		score = new JPanel();
+		scorenum = new JLabel("");
+		scorenum.setFont(new Font("Malgun Gothic", Font.BOLD, 30));
+//		score.add(scorenum);
+		GameDBBean db = GameDBBean.getInstance();
+		scoreList=db.idScore(userid);
+		if(scored==false) {
+			for(ScoreBean bean:scoreList) {
+				score.add(new JLabel(bean.getTime()));
+				score.add(new JLabel(bean.getUserid()));
+				scored=true;
+			}
+	}
+
+}

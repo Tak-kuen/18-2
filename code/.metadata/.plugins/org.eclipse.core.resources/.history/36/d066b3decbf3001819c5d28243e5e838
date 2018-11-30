@@ -1,0 +1,54 @@
+package Game;
+
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.Toolkit;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.util.ArrayList;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class Rank extends JFrame{
+	JPanel score;
+	JLabel scorenum;
+	String userid;
+	ArrayList<ScoreBean> scoreList = new ArrayList<>();
+	boolean scored = false;
+	
+	public Rank(String id)  {
+		this.userid=id;
+		score = new JPanel();
+		scorenum = new JLabel("");
+		scorenum.setFont(new Font("Malgun Gothic", Font.BOLD, 30));
+//		score.add(scorenum);
+		GameDBBean db = GameDBBean.getInstance();
+		scoreList=db.getRank(userid);
+		if(scored==false) {
+			for(int i=0; i<5;i++) {
+				score.add(new JLabel((i+1)+""));
+				score.add(new JLabel(scoreList.get(i).getTime()));
+				score.add(new JLabel(scoreList.get(i).getUserid()));
+				scored=true;
+			}
+		}
+		this.add(score);
+		this.setTitle("Rank");
+		this.setSize(400,100);
+		this.setVisible(true);
+		
+		Dimension screen = Toolkit.getDefaultToolkit().getScreenSize();
+		int x = (int) (screen.getWidth() / 2 - getWidth() / 2);
+		int y = (int) (screen.getHeight() / 2 - getHeight() / 2);
+		setLocation(x, y);
+		this.setResizable(false);
+		this.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent e) {
+				setVisible(false);
+				dispose();
+			}
+		});
+	}
+}

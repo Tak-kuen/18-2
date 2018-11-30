@@ -1,0 +1,10 @@
+package Game;
+
+import javax.swing.JFrame;
+
+public class Rank extends JFrame{
+
+	public Rank(String id)  {
+	}
+
+}

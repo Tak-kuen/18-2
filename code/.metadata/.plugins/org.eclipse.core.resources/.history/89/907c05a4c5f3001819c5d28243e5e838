@@ -1,0 +1,9 @@
+package Game;
+
+public class Rank {
+
+	public Rank(String id) {
+		// TODO Auto-generated constructor stub
+	}
+
+}

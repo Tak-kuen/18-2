@@ -1,0 +1,8 @@
+#command=class full name
+
+#admin area
+##admin area-main&authorization
+/mg/managerMain.do=coffee.command.ManagerMainAction
+/mg/managerLoginForm.do=coffee.command.ManagerLoginFormAction
+/mg/managerLoginPro.do=coffee.command.ManagerLoginProAction
+/mg/managerLogout.do=coffee.command.ManagerLogoutAction
